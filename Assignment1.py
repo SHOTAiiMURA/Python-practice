@@ -79,5 +79,13 @@ print(squares)
 #if there are conditions
 evens = [x for x in range(11) if x % 2 ==0]
 print(evens)
+#other example
+words = ["apple","banana","cherry"]
+lenghts = [len(word) for word in words]
+print(lenghts)
 # 19. How do you install a package using pip?
+#when single package install
+#pip install numpy
+#when multiple package install
+#pip install numpy pandas scipy
 # 20. What is the use of the lambda function in Python?
