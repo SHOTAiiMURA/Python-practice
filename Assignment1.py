@@ -89,3 +89,15 @@ print(lenghts)
 #when multiple package install
 #pip install numpy pandas scipy
 # 20. What is the use of the lambda function in Python?
+#When a trigger is received, the pre-defined code is automatically executed in response to that trigger.
+# how it uses
+#sort(), filter() and map()
+#callback
+#basic grammar: lambda arguments: expression
+#basic lambda function
+#add two values
+add_num = lambda x, y: x + y
+result_add = add_num(1,4)
+print(result_add)
+
+
