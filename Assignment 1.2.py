@@ -17,7 +17,12 @@ class Animal:
         self.name = name
     def speak(self):
         raise NotImplementedError("Subclass msut implement this methods")
-
+class Human:
+    def __init__ (self,name):
+        self.name = name
+    def greeting(self):
+        raise NotImplementedError("Subclass must implement this methods")
+#subclass
 #Derived class
 class Dog(Animal):
     def speak(self):
@@ -29,10 +34,24 @@ class Cat(Animal):
 dog = Dog("Buddy")
 cat = Cat("Tama")
 
+class Japanese(Human):
+    def greeting(self):
+        return f"{self.name} says Mochimaker"
+class India(Human):
+    def greeting(self):
+        return f"{self.name} says Villager"
+
+japanese = Japanese("Naruto")
+india = India("Chikin curry")
+
 if __name__ == "__main__":
     print(dog.speak())
     print(cat.speak())
+    print(japanese.greeting())
+    print(india.greeting())
 # 14. What is a module in Python?
+import math
+print(math.sqrt(16))
 # 15. How do you import a module in Python?
 # 16. What is the purpose of the if __name__ == "__main__": statement? 17. How do you open a file in Python for reading?
 # 18. What is a list comprehension in Python?
