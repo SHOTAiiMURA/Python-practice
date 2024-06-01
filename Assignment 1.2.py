@@ -55,5 +55,15 @@ print(math.sqrt(16))
 # 15. How do you import a module in Python?
 # 16. What is the purpose of the if __name__ == "__main__": statement? 17. How do you open a file in Python for reading?
 # 18. What is a list comprehension in Python?
+#[expression for item in iterable if condition]
+squares = [i**2 for i in range(12)]
+print(squares)
+
+words = ["apple","banana","cherry"]
+lenghts = [len(word) for word in words]
+print(lenghts)
 # 19. How do you install a package using pip?
+#when single package install
+#pip install numpy
+
 # 20. What is the use of the lambda function in Python?
