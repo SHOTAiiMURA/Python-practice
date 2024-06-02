@@ -71,5 +71,31 @@ x = "Hello"
 if not type(x) is int:
     raise TypeError("Only integers are allowed")
 # 18. How do you read a file in Python?
+file = open("testfile.txt","r")
+print(file.read())
+### Read only part of the file.
+file = open("wantToOpenFile.txt","r")
+print(file.read(#文字数))
+### open file then close
+file = open("test.txt","r")
+print(file.readline())
+f.close()
 # 19. What is a module in Python?
 # 20. How do you import a module in Python?
+### create module: create function and save file with (name).py
+def greeting(name):
+    print("HEllO"+name)
+### use module: if I saved above module by naming module.py
+import module.py
+module.greeting("Boris Johnson")
+
+### variables in module
+person1 = {
+    "name": "John",
+    "age": "45",
+    "country":"Japan"
+}
+### save as mymodule.py
+import myModule
+your_age = myModule.person1["age"]
+print(your_age)
