@@ -52,6 +52,24 @@ result = exe_hello(10)
 # 16. What is the difference between a list and a tuple in Python?
 #リストとはデータを格納するために使用されるデータ型。「」を使用してリストを作成できる。turpleとの違いは可変オブジェクトであること。タプルで作成された内容は変更できない。
 # 17. How do you handle exceptions in Python?
+x = "Billie Joe"
+try:
+    print(x)
+except NameError:
+    print("Variable x is not defined")
+else:
+    print("Something else went wrong")
+finally: #execute no matter if the try block raqises any errors or not.
+    print("The try except is finished")
+
+#Raise an exception
+x = -1
+if x < 0:
+    raise Exception("Sorry, no number below zero")
+
+x = "Hello"
+if not type(x) is int:
+    raise TypeError("Only integers are allowed")
 # 18. How do you read a file in Python?
 # 19. What is a module in Python?
 # 20. How do you import a module in Python?
