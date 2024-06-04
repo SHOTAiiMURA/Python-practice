@@ -1,4 +1,5 @@
 # .format(): Use string formatting with .format() to create a formatted string1
+
 # .join(): Combine elements from a list into a single string using .join()1
 # .split(): Split a string into a list of substrings based on a delimiter1
 # .strip(): Remove leading and trailing whitespace from a string1
