@@ -1,10 +1,16 @@
 # .format(): Use string formatting with .format() to create a formatted string1
-mLastname = "Iimura"
-mFirstname = "shota"
-greeting_template = (f"Hello, My name is {mLastname} {mFirstname}")
-print(greeting_template)
+# mLastname = "Iimura"
+# mFirstname = "shota"
+# greeting_template = (f"Hello, My name is {} {}".format(mLastname, mFirstname)
+# print(greeting_template)
 # .join(): Combine elements from a list into a single string using .join()1
+myTuple = ("john","mary","list")
+joinX = "#".join(myTuple)
+print(joinX )
 # .split(): Split a string into a list of substrings based on a delimiter1
+myList = "10%","200"
+x = myList.split("%")
+print(x)
 # .strip(): Remove leading and trailing whitespace from a string1
 # dir(): Explore the attributes and methods of an object1
 # Nested Data: Work with nested lists or dictionaries1
