@@ -11,6 +11,7 @@ print(joinX )
 myList = "10%","200"
 x = myList.split("%")
 print(x)
+
 # .strip(): Remove leading and trailing whitespace from a string1
 # dir(): Explore the attributes and methods of an object1
 # Nested Data: Work with nested lists or dictionaries1
