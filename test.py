@@ -14,11 +14,25 @@ def search_movies():
         response = requests.get(api_url)
         data = json.loads(response.text)
         if data["Response"] == "True":
-            # TODO: Process the search results and display the movies
             print("Movies found:", data)
         else:
             messagebox.showerror("Error", "Movie not found")
     except Exception as e:
         messagebox.showerror("Error", str(e))
 
-search_movies()
+def display_movies(movies):
+    movie_result_container = simpledialog.querySelector('#movieResult')
+    movie_result_container.innerHTML = ''
+
+    for movie in movies:
+        movie_element = simpledialog.createElement('div')
+        movie_element.innerHTML = f'''
+        <div class="movieCard">
+            <div id="movieImgBlock">
+                <img src="{movie['Poster']}"/>
+            </div>
+            <h2>{movie['Title']}</h2>
+            <p>{movie['Year']}</p>
+        </div>
+        '''
+        movie_result_container.appendChild(movie_element)
